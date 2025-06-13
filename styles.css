@@ -1,0 +1,278 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+header{
+    height: 70vh;
+    border: 2px solid ;
+    background-image: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.genlayout {
+    max-width: 1100px;
+    margin: auto;
+}
+
+nav {
+    padding-block: 1rem;
+}
+
+.innernav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.innernav > span {
+    rotate: 180deg;
+}
+
+.navicons {
+    display: flex;
+    gap: .7rem;
+}
+
+.innernav > h1 {
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.navicons > a {
+    color: #9b0909;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.navicons > a :last-child {
+    position: relative;
+}
+
+.navicons > a > span {
+    top: 7px;
+    right: -7px;
+    position: absolute;
+    background-color: #9e7939;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+}
+
+.banner {
+    margin-top: 4rem;
+}
+
+.banner > h6 {
+    color: #9e7939;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.banner > h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.banner > p {
+    color: #fff;
+    width: 500px;
+    margin-block: 1rem;
+}
+
+.btn {
+    display: flex;
+    gap: .5rem;
+}
+
+.btn > button {
+    padding: .4rem 1rem;
+    font-size: 10px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.btn > button :first-child {
+    color: #fff;
+    background-color: #000;
+}
+
+.btn > button :last-child{
+    background-color: #fff;
+    color: #000;
+}
+
+/* styling for main */
+
+.giftideas{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.giftideascontent {
+    flex: 1;
+}
+
+.giftideascontent > h1 {
+    text-transform: capitalize;
+    color: #9e7939;
+    font-weight: 400;
+}
+
+.giftideascontent > p {
+    width: 450px;
+    font-size: 14px;
+    margin-block: 1rem;
+}
+
+.giftideas > img {
+    flex: 1;
+}
+
+/* trending section styling */
+.trending {
+    margin-top: 3rem;
+}
+
+.trendingtabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trendingtabs > h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.trendingtabs > h1 > span {
+    border-bottom: 2px solid #9e7939;
+    padding-bottom: 0.5rem;
+}
+
+.lefttabs {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.lefttabs > a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.lefttabs > a :first-child {
+    background-color: #d49834;
+    color: #fff;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+}
+
+.trendingcardwrapper {
+    margin-block: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.trendingcard {
+    position: relative;
+    overflow: hidden;
+}
+
+.trendingcard > span {
+    right: -12px;
+    top: 7px;
+    position: absolute;
+    z-index: 1;
+    font-size: 8px;
+    text-transform: capitalize;
+    background-color: #e32e41;
+    padding: 2px;
+    rotate: 40deg;
+    width: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trendingcard > img {
+    width: 100px;
+}
+
+.trendingcard > h4 {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.pricetag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pricetag > h6:first-child {
+    color: #9e7939;
+    font-weight: 600;
+}
+
+.pricetag > h6 :last-child {
+    color: #474746;
+    opacity: 0.4;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+
+
+/* styling for items section */
+.itemsec{
+    background-image: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 3rem;
+}
+
+.itemdisplay {
+    padding-block: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    color: #fff;
+}
+
+
+.itemcard > h1 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.itemcard > h5 {
+    font-weight: 500;
+    font-size: 10px;
+}
