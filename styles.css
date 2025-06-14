@@ -129,9 +129,15 @@ nav {
     flex: 1;
 }
 
-.giftideascontent > h1 {
+.giftideascontent > h5 {
     text-transform: capitalize;
     color: #9e7939;
+    font-weight: 400;
+}
+
+.giftideascontent > h1 {
+    text-transform: uppercase;
+    font-size: 28px;
     font-weight: 400;
 }
 
@@ -143,6 +149,7 @@ nav {
 
 .giftideas > img {
     flex: 1;
+    
 }
 
 /* trending section styling */
@@ -180,7 +187,7 @@ nav {
     font-weight: 600;
 }
 
-.lefttabs > a :first-child {
+.lefttabs > a:first-child {
     background-color: #d49834;
     color: #fff;
     padding: 0.3rem 0.7rem;
@@ -216,7 +223,7 @@ nav {
     justify-content: center;
 }
 
-.trendingcard > img {
+.trendingcard > img{
     width: 100px;
 }
 
@@ -239,7 +246,7 @@ nav {
     font-weight: 600;
 }
 
-.pricetag > h6 :last-child {
+.pricetag > h6:last-child {
     color: #474746;
     opacity: 0.4;
     font-weight: 600;
@@ -263,6 +270,12 @@ nav {
     gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
     color: #fff;
+}
+
+.itemcard {
+    border: 1px solid #fff;
+    height: 40vh;
+    padding: 2rem;
 }
 
 
