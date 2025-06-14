@@ -46,8 +46,12 @@ nav {
     font-weight: 400;
 }
 
+.hamburger, #toggle {
+    display: none;
+}
+
 .navicons > a {
-    color: #9b0909;
+    color: #9e7939;
     text-decoration: none;
     font-size: 12px;
 }
@@ -289,3 +293,71 @@ nav {
     font-weight: 500;
     font-size: 10px;
 }
+
+/* responsive design code with media query */
+@media(max-width: 700px) and (max-width: 350px){
+    .innernav > span{
+        display: none;
+    }
+
+    .innernav > h1{
+        margin-left: 1rem;
+    }
+
+    .hamburger{
+        display: block;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    .navright{
+        display: none;
+    }
+
+    .banner{
+        width: 330px;
+    }
+
+    .banner > p{
+        width: 100%;
+    }
+
+    .giftideas{
+        /* flex-direction: column-reverse; */
+        width: 350px;
+        overflow-x: scroll;
+    }
+
+    .giftideascontent{
+        flex: 1;
+    }
+
+    .giftideascontent > p{
+        width: 300px;
+    }
+
+    .trending{
+        max-width: 350px;
+    }
+
+    .trendingtabs{
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    .trendingcardwrapper{
+        flex-direction: column;
+    }
+
+    .trendingcard{
+        width: 100%;
+    }
+
+    .itemdisplay{
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
