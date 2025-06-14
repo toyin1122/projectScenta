@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css");
 
 *{
     margin: 0;
@@ -8,6 +8,7 @@
 }
 
 header{
+    padding-top: 3rem;
     height: 70vh;
     border: 2px solid ;
     background-image: url("./images/bg.jpg");
@@ -22,7 +23,12 @@ header{
 }
 
 nav {
+    background-color: #170f04;
     padding-block: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 4;
 }
 
 .innernav {
@@ -295,7 +301,12 @@ nav {
 }
 
 /* responsive design code with media query */
-@media(max-width: 700px) and (max-width: 350px){
+@media(max-width: 700px) and (max-width: 560px){
+
+    nav{
+        position: fixed;
+        width: 100%;
+    }
     .innernav > span{
         display: none;
     }
@@ -312,6 +323,41 @@ nav {
 
     .navright{
         display: none;
+        position: absolute;
+        width: 20%;
+        padding: 1.4rem;
+        top: 3rem;
+        right: 3px;
+        z-index: 1;
+        background-color: #9e7939;
+        opacity: 0.97;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    .navicons{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        border-left: none;
+    }
+
+    .navicons > a{
+        font-size: 1rem;
+    }
+
+    .navicons > a > span {
+        background-color: #0e0801;
+        font-size: 10px;
+        top: 9px;
+        right: -5px;
+        width: 14px;
+        height: 14px;
+    }
+
+    #toggle:checked + .navright{
+        display: block;
+        transform: none;
     }
 
     .banner{
@@ -323,9 +369,9 @@ nav {
     }
 
     .giftideas{
-        /* flex-direction: column-reverse; */
+        flex-direction: column-reverse;
         width: 350px;
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
     }
 
     .giftideascontent{
